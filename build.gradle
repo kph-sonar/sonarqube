@@ -205,6 +205,7 @@ allprojects {
 apply plugin: 'org.sonarqube'
 sonar {
   properties {
+    property 'sonar.projectKey', sonarProjectKey
     property 'sonar.projectName', projectTitle
     property 'sonar.projectVersion', "${versionInSources}-SNAPSHOT"
     property 'sonar.buildString', version
